@@ -1,0 +1,240 @@
+/**
+ * settings.less
+ */
+body {
+  background: #aaa;
+}
+/**
+ * cols.css
+ */
+.col-third {
+  display: block;
+}
+@media (min-width: 965px) {
+  .col-third {
+    float: left;
+    width: 33%;
+  }
+}
+.col-half {
+  display: block;
+}
+@media (min-width: 965px) {
+  .col-half {
+    float: left;
+    width: 49%;
+  }
+}
+.poster {
+  font-size: 1.75em;
+  padding: 2em;
+  margin: 1em;
+  text-align: center;
+  text-transform: uppercase;
+}
+.poster.blue {
+  background-color: #007de1;
+}
+.poster.yellow {
+  background-color: yellow;
+}
+.poster:hover {
+  cursor: pointer;
+}
+.menu-icon {
+  display: block;
+  float: right;
+  height: 55px;
+  width: 55px;
+  color: #fff;
+  font-size: 2em;
+  line-height: 55px;
+  text-align: center;
+}
+.menu-icon:hover {
+  cursor: pointer;
+  color: #222;
+  background: #fff;
+}
+/**
+ * menu.less
+ */
+.header {
+  max-width: 1200px;
+  margin: auto;
+  font-size: 1em;
+  font-family: sans-serif;
+}
+.header .main-menu {
+  position: relative;
+  background: #222;
+  height: auto;
+  overflow: auto;
+}
+.header .main-menu .logo {
+  margin: auto;
+  display: block;
+  float: left;
+  /*background-image: url("https://www.expresstrainers.com/templates/default/img/express-trainers-logo.png");*/
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 55px;
+  line-height: 55px;
+  color: lightblue;
+  font-weight: bolder;
+  margin: 0 1em;
+  width: 115px;
+}
+@media (min-width: 420px) {
+  .header .main-menu .logo {
+    width: 230px;
+  }
+}
+.header .main-menu ul {
+  display: block;
+  float: right;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-transform: uppercase;
+  width: 100%;
+}
+@media (min-width: 965px) {
+  .header .main-menu ul {
+    width: auto;
+  }
+}
+.header .main-menu ul li {
+  border-top: 1px solid #fff;
+  padding: 0.5em 1em;
+}
+@media (min-width: 965px) {
+  .header .main-menu ul li {
+    display: inline-block;
+    border-top: 0;
+    padding: 0 1em;
+    margin: 0;
+  }
+}
+.header .main-menu ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+@media (min-width: 965px) {
+  .header .main-menu ul li a {
+    line-height: 55px;
+  }
+}
+.header .main-menu ul li:hover {
+  cursor: pointer;
+  background: #fff;
+}
+.header .main-menu ul li:hover a {
+  color: #007de1;
+}
+.header .main-menu ul li.sale {
+  background-color: red;
+}
+.header .main-menu ul li.sale:hover {
+  background: #fff;
+}
+.header .main-menu .burger {
+  display: block;
+  float: right;
+  height: 55px;
+  width: 55px;
+  color: #fff;
+  font-size: 2em;
+  line-height: 55px;
+  text-align: center;
+}
+.header .main-menu .burger:hover {
+  cursor: pointer;
+  color: #222;
+  background: #fff;
+}
+@media (min-width: 965px) {
+  .header .main-menu .burger {
+    display: none;
+  }
+}
+.header .main-menu .search-icon {
+  display: block;
+  float: right;
+  height: 55px;
+  width: 55px;
+  color: #fff;
+  font-size: 2em;
+  line-height: 55px;
+  text-align: center;
+}
+.header .main-menu .search-icon:hover {
+  cursor: pointer;
+  color: #222;
+  background: #fff;
+}
+.header .main-menu .search-field {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  line-height: 55px;
+  margin-right: 55px;
+  height: 55px;
+  padding: 0 1em;
+  border: #aaa;
+  border-radius: 5px 0 0 5px;
+  font-size: 1em;
+  width: 50%;
+  z-index: 10;
+}
+.header .child-menu {
+  width: 100%;
+  background-color: #fff;
+}
+.header .child-menu .section {
+  display: none;
+  border: 1px solid #222;
+  border-top: 0;
+  color: #222;
+  font-size: 1em;
+  height: auto;
+  overflow: auto;
+}
+.header .child-menu .section h2 {
+  font-size: 1em;
+  border-bottom: 2px solid #444;
+  padding: 0.5em 0;
+  margin: 0 0.25em;
+}
+.header .child-menu .section ul {
+  padding: 0 0.25em;
+}
+.header .child-menu .section ul li {
+  list-style: none;
+  padding: 2px;
+  margin: 0;
+}
+.header .child-menu .section ul li:hover {
+  cursor: pointer;
+  background-color: #3c3c3c;
+  color: #fff;
+  border-radius: 2px;
+}
+.header .top-menu {
+  background: black;
+  color: white;
+}
+.header .top-menu ul {
+  height: 30px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: right;
+}
+.header .top-menu ul li {
+  display: inline-block;
+  height: 30px;
+  padding: 0.25em 0.5em;
+}

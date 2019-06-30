@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Mega Menu</title>
+  
+  
+  <link rel='stylesheet' href='https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css'>
+
+      <link rel="stylesheet" href="./style.css">
+
+  
+</head>
+
+<body>
+
+  <div class="header">
+ 
+  <div class="top-menu">
+    <ul>
+      <li>Some</li>
+      <li>More</li>
+      <li>Items</li>
+      <li class="basket-link">checkout</li>
+    </ul>
+    <div class="checkout">
+      
+    </div>
+  </div>
+  
+  <div class="main-menu">
+  
+    <div class="logo">
+      MEGA MENU
+    </div>
+    
+    <div class="search-icon">
+      <span title="icon-search" class="icon-search"></span>
+    </div>
+    <input class="search-field" type="text" placeholder="Search..." />
+    
+    <div class="burger">
+      <span title="icon-reorder" class="icon-reorder"></span>
+    </div>
+    
+    <ul>
+      <li data-item="brands">
+        <a href="#">Brands</a>
+      </li>
+      <li data-item="categories">
+        <a href="#">Categories</a>
+      </li>  
+      <li data-item="men">
+        <a href="#">Men</a>
+      </li>
+      <li data-item="women">
+        <a href="#">Women</a>
+      </li> 
+      <li>
+        <a href="#">Children</a>
+      </li>
+      <li class="sale" data-item="sale">
+        <a href="#">Sale</a>
+      </li>  
+    </ul>
+       
+  </div>
+    
+  <div class="child-menu">    
+    <div class="section" data-parent="brands">
+      <ul>
+        <li>Adidas</li>
+        <li>Nike</li>
+      </ul>
+    </div>   
+    <div class="section" data-parent="men">      
+      <div class="col-third">
+        <h2>Brands</h2>
+        <ul>
+          <li>Reebook</li>
+          <li>Nike</li>
+        </ul>
+      </div>      
+      <div class="col-third">
+        <h2>Category</h2>
+        <ul>
+          <li>Running</li>
+          <li>Tennis</li>
+        </ul>
+      </div>      
+      <div class="col-third">
+        <h2>Size</h2>
+        <ul>
+          <li>4</li>
+          <li>5</li>
+          <li>6</li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="section" data-parent="sale">
+      <div class="col-half">
+        <div class="poster yellow">
+          Extra 40% Off
+          January Sale
+          Clearance
+        </div>
+      </div>
+      <div class="col-half">
+        <div class="poster blue">
+          Extra 60% Off
+          January Sale
+          last Pairs
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  <!-- /child-menu -->  
+</div>
+<!-- /header -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+
+  
+
+    <script  src="./script.js"></script>
+
+
+
+
+</body>
+
+</html>
